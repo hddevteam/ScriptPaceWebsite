@@ -31,6 +31,8 @@ entered in `site-config.js`. Do not substitute a guessed address.
 
 ## Publishing
 
-`main` is the GitHub Pages source branch. The workflow under
-`.github/workflows/pages.yml` validates the site before deployment. A custom
-domain is not configured until its exact value is explicitly approved.
+`main` is the intended GitHub Pages source branch. The workflow under
+`.github/workflows/pages.yml` validates the site before deployment. The remote
+repository is still awaiting release integration, so the feature branch may be
+the default branch temporarily; do not treat that state as a published site.
+A custom domain is not configured until its exact value is explicitly approved.
