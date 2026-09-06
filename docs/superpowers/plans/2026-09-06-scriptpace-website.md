@@ -179,7 +179,7 @@
 
 - [ ] **Step 5: Run content checks**
 
-  Extend `scripts/check-site.py` to reject public HTML containing `自动改稿`, `云端写作`, `cloud writing`, `perfect recognition`, `raw microphone audio`, or `separate Watch purchase` claims. Verify each localized screenshot path exists.
+  Extend `scripts/check-site.py` to reject public marketing HTML containing `自动改稿`, `云端写作`, `cloud writing`, `perfect recognition`, `record and save raw microphone audio`, `保存原始麦克风音频`, or `separate Watch purchase` claims. Privacy pages may state the negative privacy promise that raw microphone audio is not stored.
 
 - [ ] **Step 6: Commit the marketing pages**
 
