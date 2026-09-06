@@ -4,7 +4,7 @@
 - Product: 稿随 / ScriptPace
 - Repository: `https://github.com/hddevteam/ScriptPaceWebsite`
 - Hosting: GitHub Pages
-- Status: Implementation in progress
+- Status: Implemented on `feature/website-mvp`; release configuration pending
 - Source content: `project_docs/12-APP-STORE-LISTING-COPY.md` and `project_docs/assets/14-scriptpace-screenshots/`
 
 ## 1. Outcome
@@ -194,16 +194,32 @@ Build and publish a static bilingual product website with the smallest complete 
 
 ### Do
 
-Implementation and deployment evidence will be recorded in the repository history and the final validation section below.
+The implementation is recorded in:
+
+- `465269c` — website MVP design, numbered project document, and implementation plan;
+- `30317a8` — bilingual static website, responsive visual system, ten locale-matched screenshots, support/legal pages, and GitHub Pages workflow.
+
+The branch `feature/website-mvp` is pushed to GitHub at
+`https://github.com/hddevteam/ScriptPaceWebsite/tree/feature/website-mvp`.
 
 ### Check
 
-The final check must include route, language, responsive, accessibility, screenshot, legal, and GitHub Pages deployment evidence. A successful local build alone is not sufficient.
+The current local evidence is:
+
+- `node --check site-config.js` passed;
+- `python3 scripts/check-site.py` passed in preview mode;
+- `python3 scripts/check-links.py` passed;
+- `python3 scripts/check-responsive-assets.py` passed and found all ten public screenshots;
+- all eleven local routes returned HTTP 200 from the static server;
+- Chrome inspection passed for Chinese home, English features, Chinese support, Chinese privacy, mobile navigation, language switching, and desktop/mobile layouts;
+- `python3 scripts/check-site.py --production` correctly fails because the public support email is not configured.
+
+The following release evidence is still required before merging to `main`: an approved public support email, final owner/legal review of the privacy and terms text, App Store URL readback after the app record becomes public, and a successful GitHub Pages deployment readback.
 
 ### Act
 
-Post-launch improvements will be limited to evidence from support questions, App Store review feedback, and analytics only if analytics is explicitly added and separately documented.
+Before release, replace the preview contact warning with the approved support contact, remove the draft-review callouts after the legal text is approved, run the production gate again, and then merge/publish. Post-launch improvements will be limited to evidence from support questions, App Store review feedback, and analytics only if analytics is explicitly added and separately documented.
 
 ## 10. Retrospective
 
-To be completed after the public website has passed route, content, accessibility, and deployment validation. The retrospective must record what was kept out of the MVP and which follow-up work is justified by evidence.
+The first implementation kept out accounts, a CMS, support tickets, analytics, cookies, payment collection, and custom-domain DNS. The remaining work is release configuration rather than a missing website surface: confirm contact/legal ownership, then publish the already validated static site through GitHub Pages.
