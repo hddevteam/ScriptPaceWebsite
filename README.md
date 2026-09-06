@@ -26,9 +26,9 @@ python3 scripts/check-responsive-assets.py
 git diff --check
 ```
 
-The production checks intentionally fail while the privacy/legal draft callout
-remains. The configured support email was copied from the published WristMark
-support page; do not substitute a guessed address.
+The production checks must pass before the site is published. The configured
+support email was copied from the published WristMark support page; do not
+substitute a guessed address.
 
 ## Publishing
 
