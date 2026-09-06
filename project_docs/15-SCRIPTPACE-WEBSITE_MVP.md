@@ -213,15 +213,15 @@ The current local evidence is:
 - `python3 scripts/check-responsive-assets.py` passed and found all ten public screenshots;
 - all eleven local routes returned HTTP 200 from the static server;
 - Chrome inspection passed for Chinese home, English features, Chinese support, Chinese privacy, mobile navigation, language switching, and desktop/mobile layouts;
-- `python3 scripts/check-site.py --production` correctly fails because the public support email is not configured and the privacy/support preview callouts are still present.
+- `python3 scripts/check-site.py --production` now recognizes the configured public support email; it still correctly fails while the privacy-policy draft callout remains.
 - The remote repository currently has no `main` branch, uses `feature/website-mvp` as its default branch, and has no pull request or Pages workflow run; this must be corrected during the explicitly authorized release integration.
 - The configured App Store URL currently returns HTTP `404`; it remains a pre-release placeholder until the App Store record is publicly accessible.
 
-The following release evidence is still required before creating and merging the release branch: an approved public support email, final owner/legal review of the privacy and terms text, a successful App Store URL readback after the app record becomes public, and an explicitly authorized GitHub Pages integration followed by deployment readback.
+The public support email was populated from the published WristMark support page. The following release evidence is still required before creating and merging the release branch: final owner/legal review of the privacy and terms text, a successful App Store URL readback after the app record becomes public, and an explicitly authorized GitHub Pages integration followed by deployment readback.
 
 ### Act
 
-Before release, replace the preview contact warning with the approved support contact, remove the draft-review callouts after the legal text is approved, run the production gate again, and then merge/publish. Post-launch improvements will be limited to evidence from support questions, App Store review feedback, and analytics only if analytics is explicitly added and separately documented.
+Before release, retain the configured support contact, remove the draft-review callout after the legal text is approved, run the production gate again, and then merge/publish. Post-launch improvements will be limited to evidence from support questions, App Store review feedback, and analytics only if analytics is explicitly added and separately documented.
 
 ## 10. Retrospective
 
