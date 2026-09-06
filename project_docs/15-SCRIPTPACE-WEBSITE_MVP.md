@@ -215,8 +215,9 @@ The current local evidence is:
 - Chrome inspection passed for Chinese home, English features, Chinese support, Chinese privacy, mobile navigation, language switching, and desktop/mobile layouts;
 - `python3 scripts/check-site.py --production` correctly fails because the public support email is not configured and the privacy/support preview callouts are still present.
 - The remote repository currently has no `main` branch, uses `feature/website-mvp` as its default branch, and has no pull request or Pages workflow run; this must be corrected during the explicitly authorized release integration.
+- The configured App Store URL currently returns HTTP `404`; it remains a pre-release placeholder until the App Store record is publicly accessible.
 
-The following release evidence is still required before creating and merging the release branch: an approved public support email, final owner/legal review of the privacy and terms text, App Store URL readback after the app record becomes public, and an explicitly authorized GitHub Pages integration followed by deployment readback.
+The following release evidence is still required before creating and merging the release branch: an approved public support email, final owner/legal review of the privacy and terms text, a successful App Store URL readback after the app record becomes public, and an explicitly authorized GitHub Pages integration followed by deployment readback.
 
 ### Act
 
