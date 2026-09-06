@@ -198,6 +198,7 @@ The implementation is recorded in:
 
 - `465269c` — website MVP design, numbered project document, and implementation plan;
 - `30317a8` — bilingual static website, responsive visual system, ten locale-matched screenshots, support/legal pages, and GitHub Pages workflow.
+- the production validation gate now also rejects unfinished privacy/legal preview text.
 
 The branch `feature/website-mvp` is pushed to GitHub at
 `https://github.com/hddevteam/ScriptPaceWebsite/tree/feature/website-mvp`.
@@ -212,7 +213,7 @@ The current local evidence is:
 - `python3 scripts/check-responsive-assets.py` passed and found all ten public screenshots;
 - all eleven local routes returned HTTP 200 from the static server;
 - Chrome inspection passed for Chinese home, English features, Chinese support, Chinese privacy, mobile navigation, language switching, and desktop/mobile layouts;
-- `python3 scripts/check-site.py --production` correctly fails because the public support email is not configured.
+- `python3 scripts/check-site.py --production` correctly fails because the public support email is not configured and the privacy/support preview callouts are still present.
 
 The following release evidence is still required before merging to `main`: an approved public support email, final owner/legal review of the privacy and terms text, App Store URL readback after the app record becomes public, and a successful GitHub Pages deployment readback.
 

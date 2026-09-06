@@ -22,6 +22,14 @@ FORBIDDEN_MARKETING_PATTERNS = (
     "会保存原始麦克风音频",
     "separate watch purchase",
 )
+PRODUCTION_DRAFT_PATTERNS = (
+    "product draft",
+    "隐私政策草案",
+    "support email will be configured before public release",
+    "支持邮箱会在正式发布前配置",
+    "cannot be used as the final privacy policy URL",
+    "不能作为最终隐私政策 URL",
+)
 
 
 class PageParser(html.parser.HTMLParser):
@@ -81,6 +89,13 @@ def main() -> int:
                 errors.append(f"missing page: {path.relative_to(ROOT)}")
                 continue
             validate_page(path, errors)
+            if production:
+                content = path.read_text(encoding="utf-8").lower()
+                for forbidden in PRODUCTION_DRAFT_PATTERNS:
+                    if forbidden.lower() in content:
+                        errors.append(
+                            f"{path.relative_to(ROOT)}: draft or preview release text remains: {forbidden}"
+                        )
     config = ROOT / "site-config.js"
     if not config.is_file():
         errors.append("missing site-config.js")
