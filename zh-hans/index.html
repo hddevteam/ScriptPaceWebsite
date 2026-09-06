@@ -15,7 +15,7 @@
     <header class="site-header">
       <div class="site-header__inner">
         <a class="brand" href="index.html" aria-label="稿随首页">
-          <span class="brand__mark" aria-hidden="true">稿</span>
+          <img class="brand__icon" src="../assets/brand/scriptpace-app-icon.png" alt="">
           <span>稿随 <span class="brand__english">ScriptPace</span></span>
         </a>
         <nav class="site-nav" aria-label="主导航">
@@ -54,7 +54,7 @@
             <div class="hero__card">
               <div class="hero__card-bar"><span>自然表达的课程开场</span><span>Voice Follow</span></div>
               <p class="hero__script">当提词器滚动太快，我们会开始<span>追着文字走</span>；滚动太慢，又会失去表达的节奏。</p>
-              <span class="hero__status">第 2 段 · 跟随中</span>
+              <span class="hero__status">第 3 段 · 跟随中</span>
             </div>
           </div>
         </div>
@@ -103,16 +103,25 @@
       <section class="section section--soft">
         <div class="container">
           <div class="section__heading">
-            <p class="eyebrow">真实产品画面</p>
-            <h2>让每一步都看得见。</h2>
-            <p>同一份故事，从 Mac 到 iPhone，再到 Apple Watch；中文和英文页面各自对应真实的产品画面。</p>
+            <p class="eyebrow">一个故事，三种画面</p>
+            <h2>同一份讲稿，同一个第三段，三端协同工作。</h2>
+            <p>Mac 负责主要表达，iPhone 和 Apple Watch 作为配套控制。下面三张截图使用同一份中文讲稿，并停留在第 3/5 段。</p>
           </div>
-          <div class="screenshot-grid">
-            <figure class="screenshot-card"><img src="../assets/screenshots/zh-Hans/01-remote-connected.png" alt="iPhone Remote 已连接 Mac 并显示中文讲稿" loading="lazy"><figcaption>让表达自然推进，不必追着提词器走。</figcaption></figure>
-            <figure class="screenshot-card"><img src="../assets/screenshots/zh-Hans/02-mac-script.png" alt="Mac 上显示中文课程讲稿的稿随提词器" loading="lazy"><figcaption>先把讲稿放在眼前，再把注意力放回表达。</figcaption></figure>
-            <figure class="screenshot-card"><img src="../assets/screenshots/zh-Hans/03-practice-library.png" alt="iPhone 上的中文练习库" loading="lazy"><figcaption>先听一遍讲稿，熟悉节奏和表达效果。</figcaption></figure>
-            <figure class="screenshot-card"><img src="../assets/screenshots/zh-Hans/04-voice-practice.png" alt="iPhone 上进行中文语音练习" loading="lazy"><figcaption>让提词器跟着你的声音走。</figcaption></figure>
-            <figure class="screenshot-card screenshot-card--watch"><img src="../assets/screenshots/zh-Hans/05-watch-remote.png" alt="Apple Watch 中文 Remote 控制界面" loading="lazy"><figcaption>不方便拿 iPhone 时，用 Apple Watch 自然控制段落。</figcaption></figure>
+          <div class="screenshot-story" aria-label="稿随中文第三段同步工作流">
+            <figure class="screenshot-card screenshot-story__mac">
+              <img src="../assets/screenshots/zh-Hans/01-mac-voice-follow.png" alt="Mac 上的稿随提词器正在显示中文讲稿第三段并启用语音跟随" loading="lazy">
+              <figcaption class="screenshot-story__caption"><strong>Mac · Voice Follow</strong>Mac 是主要表达画面：讲稿跟着你的声音推进，把当前段落留在眼前。<span>第 3/5 段</span></figcaption>
+            </figure>
+            <div class="screenshot-story__companion">
+              <figure class="screenshot-card">
+                <img src="../assets/screenshots/zh-Hans/01-iphone-remote-paragraph-3.png" alt="iPhone Remote 已连接 Mac，并显示同一份中文讲稿的第三段" loading="lazy">
+                <figcaption class="screenshot-story__caption"><strong>iPhone · Remote</strong>扫码连接；节奏变化时，可以随手调整当前段落。<span>同一个第三段</span></figcaption>
+              </figure>
+              <figure class="screenshot-card screenshot-card--watch">
+                <img src="../assets/screenshots/zh-Hans/03-watch-remote-paragraph-3.png" alt="Apple Watch 显示 Mac 控制，并停留在同一份中文讲稿的第三段" loading="lazy">
+                <figcaption class="screenshot-story__caption"><strong>Watch · 补充控制</strong>不方便拿 iPhone 时，用旋钮或段落控制继续保持节奏。<span>同一个第三段</span></figcaption>
+              </figure>
+            </div>
           </div>
         </div>
       </section>
@@ -152,7 +161,7 @@
 
     <footer class="site-footer">
       <div class="site-footer__inner">
-        <div class="site-footer__brand"><a class="brand" href="index.html"><span class="brand__mark" aria-hidden="true">稿</span><span>稿随 <span class="brand__english">ScriptPace</span></span></a><p>自然表达，不必追着提词器走。</p></div>
+        <div class="site-footer__brand"><a class="brand" href="index.html"><img class="brand__icon" src="../assets/brand/scriptpace-app-icon.png" alt=""><span>稿随 <span class="brand__english">ScriptPace</span></span></a><p>自然表达，不必追着提词器走。</p></div>
         <div><p class="site-footer__heading">探索</p><div class="site-footer__links"><a href="features.html">功能</a><a href="support.html">支持</a><a data-app-store-link href="https://apps.apple.com/app/id6805241939">App Store</a></div></div>
         <div><p class="site-footer__heading">信息</p><div class="site-footer__links"><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a><a data-language-switch="en" href="../en/">English</a><a data-support-email href="support.html#contact">支持邮箱</a></div></div>
       </div>

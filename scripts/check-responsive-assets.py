@@ -10,14 +10,14 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 EXPECTED = tuple(
-    f"assets/screenshots/{locale}/{number}-{name}.png"
-    for locale in ("zh-Hans", "en")
-    for number, name in (
-        ("01", "remote-connected"),
-        ("02", "mac-script"),
-        ("03", "practice-library"),
-        ("04", "voice-practice"),
-        ("05", "watch-remote"),
+    f"assets/screenshots/{locale}/{filename}"
+    for locale, filename in (
+        ("zh-Hans", "01-mac-voice-follow.png"),
+        ("zh-Hans", "01-iphone-remote-paragraph-3.png"),
+        ("zh-Hans", "03-watch-remote-paragraph-3.png"),
+        ("en", "01-mac-voice-follow.png"),
+        ("en", "01-iphone-remote-paragraph-3.png"),
+        ("en", "03-watch-remote-paragraph-3.png"),
     )
 )
 
@@ -45,7 +45,7 @@ def main() -> int:
         for error in errors:
             print(f"ERROR: {error}")
         return 1
-    print("all ten public screenshots are present and referenced")
+    print("all six synchronized public screenshots are present and referenced")
     return 0
 
 
