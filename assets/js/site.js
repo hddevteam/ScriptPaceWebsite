@@ -107,10 +107,61 @@
     });
   }
 
+  function initHeaderScrollState() {
+    var header = document.querySelector(".site-header");
+    if (!header) {
+      return;
+    }
+    var ticking = false;
+    function sync() {
+      header.classList.toggle("is-scrolled", window.scrollY > 12);
+      ticking = false;
+    }
+    sync();
+    window.addEventListener("scroll", function () {
+      if (!ticking) {
+        ticking = true;
+        window.requestAnimationFrame(sync);
+      }
+    }, { passive: true });
+  }
+
+  function initStageReveal() {
+    if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      return;
+    }
+    if (!("IntersectionObserver" in window)) {
+      return;
+    }
+    var targets = document.querySelectorAll(".teleprompter-proof, .screenshot-story, .recording-feature, .feature-row__visual, .price-card--featured");
+    if (!targets.length) {
+      return;
+    }
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.08, rootMargin: "0px 0px -36px 0px" });
+
+    var viewportHeight = window.innerHeight || 800;
+    targets.forEach(function (node) {
+      var rect = node.getBoundingClientRect();
+      if (rect.top > viewportHeight * 0.92) {
+        node.classList.add("stage-reveal");
+        observer.observe(node);
+      }
+    });
+  }
+
   initLocaleRedirect();
   initMobileNavigation();
   initLanguageSwitch();
   initYearLabel();
   initMissingContactWarning();
   initAppStoreLinks();
+  initHeaderScrollState();
+  initStageReveal();
 })();
