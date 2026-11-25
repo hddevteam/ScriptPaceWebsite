@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="按视频创作三阶段了解稿随功能：拍前系统朗读、iPhone 语音练习与只读转录对照；实拍时 Mac 贴镜头悬浮提词、语音跟随与 iPhone/Apple Watch 遥控；以及即将发布的内置 Mac 录屏、按讲稿自动归档、成片导入管理与 SRT 字幕导出。">
+    <meta name="description" content="按视频创作三阶段了解稿随功能：拍前围绕脚本完成系统朗读、iPhone 离线排练与只读转录对照；实拍时 Mac 贴镜头语音跟随按内容自动跟进、重录与跳跃段落，配合 iPhone/Apple Watch 无声控场；以及计划推出的内置 Mac 录屏、非破坏性重调、分层素材包与 SRT 字幕导出，兼顾 OPC 单人成片与团队后期精剪。">
     <link rel="canonical" href="https://scriptpace.github.io/zh-hans/features.html">
     <link rel="alternate" hreflang="zh-Hans" href="https://scriptpace.github.io/zh-hans/features.html">
     <link rel="alternate" hreflang="en" href="https://scriptpace.github.io/en/features.html">
@@ -37,6 +37,7 @@
         </a>
         <nav class="site-nav" aria-label="主导航">
           <a href="features.html" aria-current="page">功能</a>
+          <a href="index.html#plans">价格</a>
           <a href="support.html">支持</a>
           <a class="language-link" data-language-switch="en" href="../en/features.html">English</a>
           <a class="site-nav__cta" data-app-store-link href="https://apps.apple.com/app/id6805241939">下载</a>
@@ -47,7 +48,8 @@
         </button>
       </div>
       <nav class="mobile-menu" id="mobile-menu" aria-label="移动端导航" data-mobile-menu hidden>
-        <a href="features.html">功能</a>
+        <a href="features.html" aria-current="page">功能</a>
+        <a href="index.html#plans">价格</a>
         <a href="support.html">支持</a>
         <a data-language-switch="en" href="../en/features.html">English</a>
         <a data-app-store-link href="https://apps.apple.com/app/id6805241939">前往 App Store</a>
@@ -56,18 +58,23 @@
     <main id="main-content">
       <section class="page-hero">
         <div class="container">
-          <p class="eyebrow">视频创作三阶段工作流</p>
-          <h1>拍前练顺口语，拍中稳住镜头眼神，拍后归档交付成片。</h1>
-          <p>将 Mac 悬浮提词窗贴近摄像头，配合语音跟随、iPhone 试讲、只读转录对照，以及 iPhone 与 Apple Watch 镜头外无声调整段落，搭配相机、OBS 或常用录屏软件实拍。内置 Mac 屏幕人像录制与讲稿素材归档是计划加入的能力。</p>
+          <p class="eyebrow">视频创作三阶段工作解决方案</p>
+          <h1>围绕脚本从排练到现场发挥，一台主力 Mac 兼任提词、录制与后期。</h1>
+          <p>适配创作者、讲师、OPC 与内容团队：拍前顺稿排练，拍中贴镜头按内容跟读与无声控场，并通过计划推出的内置模板与预置在同一台日常 Mac 上完成高自由度分层后期。</p>
+          <nav class="stage-nav" aria-label="功能阶段快速跳转">
+            <a class="stage-nav__pill" href="#rehearsal"><span>01</span>拍前备稿与试讲</a>
+            <a class="stage-nav__pill" href="#live-shoot"><span>02</span>贴镜头语音跟随</a>
+            <a class="stage-nav__pill" href="#recording"><span>03</span>内置录屏与分层后期</a>
+          </nav>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
           <div class="stage-header" id="rehearsal">
-            <p class="eyebrow">阶段一 · 拍前备稿与试讲</p>
-            <h2>开机录制前，先把书面稿变成顺口的表达。</h2>
-            <p>很多NG来自书面长句上镜才发现拗口。先听语感、试讲一遍、对照转录复盘，正式开录就能少拍重来。</p>
+            <p class="eyebrow">阶段一 · 围绕脚本的拍前备稿与试讲</p>
+            <h2>开机录制前，先把书面脚本练成顺口的自然表达。</h2>
+            <p>很多 NG 来自书面长句上镜才发现拗口。围绕同一份脚本先听语感、离线试讲、对照转录复盘，为正式实拍与现场发挥打好底子。</p>
           </div>
           <div class="feature-list">
             <article class="feature-row">
@@ -89,7 +96,7 @@
                 <h2>上镜之前，利用碎片时间练出段落节奏。</h2>
                 <p>不在电脑桌前时，也能在 iPhone 练习库中打开讲稿完成离线语音练习，熟悉段落衔接与重点重音，为正式拍摄建立自信。</p>
               </div>
-              <div class="feature-row__visual">
+              <div class="feature-row__visual feature-row__visual--phone">
                 <picture>
                   <source srcset="../assets/screenshots/zh-Hans/03-practice-library.webp" type="image/webp">
                   <img src="../assets/screenshots/zh-Hans/03-practice-library.png" alt="iPhone 上的稿随中文语音练习库界面" width="1206" height="2622" loading="lazy" decoding="async">
@@ -112,16 +119,16 @@
           </div>
 
           <div class="stage-header" id="live-shoot">
-            <p class="eyebrow">阶段二 · 实拍眼神与镜头外遥控</p>
-            <h2>正式开拍时，视线留在摄像头，控制留在手边。</h2>
-            <p>搭配相机、iPhone 连续互通相机、OBS 或其他录屏工具时，不再追着滚屏跑，也不用伸手摸鼠标破坏画面。</p>
+            <p class="eyebrow">阶段二 · 贴镜头语音跟随与现场自由发挥</p>
+            <h2>正式开拍时，眼神留在镜头，围绕稿件发挥也能自动跟进。</h2>
+            <p>搭配相机、iPhone 连续互通相机、OBS 或其他录屏工具实拍时，Voice Follow 基于稿件内容实时跟进、口令重录或跨段跳跃；无论单人盲操还是同事场外协助，在镜头外用 Remote 就能无声微调。</p>
           </div>
           <div class="feature-list">
             <article class="feature-row">
               <div>
                 <p class="feature-row__tag">04 · Mac 贴镜头浮动提词与 Voice Follow</p>
-                <h2>你讲到哪，讲稿就跟到哪。</h2>
-                <p>将浮动提词窗口拖到屏幕顶部摄像头正下方，按照自然语速对镜表达：语音识别推进当前句，停顿思考时耐心等待，说出重录口令即可回到上一句重拍。</p>
+                <h2>围绕稿件自由发挥，提词器基于内容跟进、重录与跳跃段落。</h2>
+                <p>将浮动提词窗口拖到屏幕顶部摄像头正下方，按照自然语速对镜表达：提词器基于稿件内容实时匹配推进，停顿或临场展开时耐心等待，接回原稿或跨段跳跃时自动跟进，说出重录口令即可直接退回上一句重拍。</p>
               </div>
               <div class="feature-row__visual">
                 <picture>
@@ -136,7 +143,7 @@
                 <h2>临时即兴发挥或段落错位，镜头外无声调整段落。</h2>
                 <p>用 iPhone 扫描 Mac 二维码即可连接 Remote，实时镜像当前讲稿位置。实拍中多聊了两句案例需要跳段时，手指轻点即可切回目标段落，无需低头移动鼠标。</p>
               </div>
-              <div class="feature-row__visual">
+              <div class="feature-row__visual feature-row__visual--phone">
                 <picture>
                   <source srcset="../assets/screenshots/zh-Hans/01-iphone-remote-paragraph-3.webp" type="image/webp">
                   <img src="../assets/screenshots/zh-Hans/01-iphone-remote-paragraph-3.png" alt="已扫码连接 Mac 并同步显示中文讲稿第三段的 iPhone Remote" width="1320" height="2868" loading="lazy" decoding="async">
@@ -149,7 +156,7 @@
                 <h2>站立授课或双手演示时，抬腕稳住节奏。</h2>
                 <p>Apple Watch 是免费的配套控制端，无需单独付费。不方便拿起手机时，旋动数码表冠或轻点上一段、下一段，就能自然衔接下一段表达。</p>
               </div>
-              <div class="feature-row__visual">
+              <div class="feature-row__visual feature-row__visual--watch">
                 <picture>
                   <source srcset="../assets/screenshots/zh-Hans/03-watch-remote-paragraph-3.webp" type="image/webp">
                   <img src="../assets/screenshots/zh-Hans/03-watch-remote-paragraph-3.png" alt="Apple Watch 控制 Mac 并停留在同一份中文讲稿第三段" width="416" height="496" loading="lazy" decoding="async">
@@ -159,16 +166,21 @@
           </div>
 
           <div class="stage-header" id="recording">
-            <p class="eyebrow">阶段三 · 内置 Mac 录制预置、讲稿归档与标准化导出</p>
-            <h2>解决“顺稿子、框范围、对导出标准”的三重繁琐。</h2>
-            <p>屏幕录制往往既要准备稿件，又要反复设定采集范围，还要核对导出规格。稿随将自然提词、可保存的录制模板预置、按讲稿自动归档与支持直出合成或拆分多层素材的导出预置接入同一桌面（随 Ultra 版本即将发布，上线时间以 App Store 页面为准）。</p>
+            <p class="eyebrow">阶段三 · 计划推出 · 免备专用录制机，留足后期空间的内置 Mac 录屏</p>
+            <h2>一台电脑兼任工作机、提词器、录制机与后期设备，分层导出释放精剪空间。</h2>
+            <p>计划随 Ultra 版本推出：用内置模板与预置免去专用录制电脑，兼顾单人快速直出与 Final Cut Pro / Premiere / DaVinci 团队精剪（上线时间以 App Store 页面为准）。</p>
           </div>
           <div class="feature-list">
             <article class="feature-row feature-row--ultra">
               <div>
-                <p class="feature-row__tag">07 · 多模式录制模板、保存预置与提词联动</p>
-                <h2>保存常用录制预置，随时进入录制模式并与提词同步开拍。</h2>
-                <p>提供全屏、单窗口、选定区域，以及仅音频、仅摄像头多种录制模板；支持将采集范围、系统声音、麦克风（可选 48 kHz / 24-bit Apple Lossless）与人像画中画布局保存为预置，一键加载随时进入录制状态。倒计时归零同步启动采集与自然提词，录制中暂停自动剔除停顿片段，录完即存独立本地 Take 随时连拍下一遍。</p>
+                <p class="feature-row__tag">07 · 内置模板与预置 · 免备专用机同步开拍</p>
+                <h2>无需另备录制专机，日常主力电脑随时进入提词录制状态。</h2>
+                <p>直接在正在干活的工作 Mac 上锁定目标窗口，倒计时归零同步启动采集与自然提词：</p>
+                <ul class="feature-row__points">
+                  <li>全屏、单窗口、选定区域、仅音频与仅摄像头五类采集模板</li>
+                  <li>采集范围、系统声音、可选 48 kHz / 24-bit Apple Lossless 麦克风与人像布局可存为预置</li>
+                  <li>录制中暂停自动剔除停顿片段，录完即存独立本地 Take 随时连拍</li>
+                </ul>
               </div>
               <div class="feature-row__visual">
                 <picture>
@@ -179,9 +191,15 @@
             </article>
             <article class="feature-row feature-row--ultra">
               <div>
-                <p class="feature-row__tag">08 · 按讲稿自动归档、成片导入与标准化导出预置</p>
-                <h2>导出预置既能直接合成成片，也能拆成多层素材满足不同场景。</h2>
-                <p>关联讲稿录制的视频会自动归入同名讲稿文件夹，支持导入外部剪辑好的生产视频（标注“导入”徽章）同夹加星标、写备注并按全部 / 收藏 / 导入筛选（移除导入项绝不删除外部原文件）。内置网页与设备兼容、小文件、ProRes 高画质、主体抠像等导出模板并支持保存自定义导出预置：既可非破坏性调节人像画中画与鼠标点击高亮后直接合成单一成片，也可一键拆成屏幕、人像、音轨与同步 <code>.srt</code> 字幕的多层素材包。</p>
+                <p class="feature-row__tag">08 · 非破坏性重调、多层素材包导出与按讲稿归档</p>
+                <h2>拍后自由调整画中画与光标，一键直出成片或拆分为多层素材包。</h2>
+                <p>无需跨设备搬运素材，在内置导出编辑器中即可完成微调、归档与交付规格锁定：</p>
+                <ul class="feature-row__points">
+                  <li>非破坏性调节人像画中画形状/四角位置、主体抠像、鼠标指针显隐与点击高亮</li>
+                  <li>内置网页兼容、ProRes 422 高画质、HEVC 透明通道及自定义导出预置</li>
+                  <li>直出单一成片，或导出时间零点对齐的多层素材包（纯净屏幕、透明人像、24-bit/无损音轨、同步 <code>.srt</code> 与逐词时间 JSON）</li>
+                  <li>按讲稿自动建夹，支持导入外部生产成片同夹筛选管理（移除列表项绝不删除外部原文件）</li>
+                </ul>
               </div>
               <div class="feature-row__visual">
                 <picture>
@@ -195,17 +213,18 @@
       </section>
 
       <section class="section section--soft">
-        <div class="container" style="text-align:center">
+        <div class="container cta-band">
           <p class="eyebrow">语音跟随提词与多端遥控</p>
-          <h2 style="margin:0;font-size:clamp(34px,5vw,58px);letter-spacing:-.055em">让下一条口播与课程录制更从容。</h2>
-          <div class="hero__actions" style="justify-content:center">
+          <h2>让下一条口播与课程录制更从容。</h2>
+          <div class="hero__actions">
             <a class="button button--primary" data-app-store-link href="https://apps.apple.com/app/id6805241939">前往 App Store</a>
+            <a class="button button--secondary" href="index.html#plans">查看方案与价格</a>
             <a class="button button--secondary" href="support.html">查看实拍配置指南</a>
           </div>
         </div>
       </section>
     </main>
-    <footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__brand"><a class="brand" href="index.html"><img class="brand__icon" src="../assets/brand/scriptpace-app-icon.png" alt="" width="34" height="34"><span>稿随 <span class="brand__english">ScriptPace</span></span></a><p>直视镜头自然表达，不必追着提词器走。</p></div><div><p class="site-footer__heading">探索</p><div class="site-footer__links"><a href="features.html">功能</a><a href="support.html">支持</a><a data-app-store-link href="https://apps.apple.com/app/id6805241939">App Store</a></div></div><div><p class="site-footer__heading">信息</p><div class="site-footer__links"><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a><a data-language-switch="en" href="../en/features.html">English</a><a data-support-email href="support.html#contact">支持邮箱</a></div></div></div><div class="site-footer__inner site-footer__bottom"><span>© <span data-current-year>2026</span> ScriptPace</span><span>版本 1.0 · Apple 平台</span></div></footer>
+    <footer class="site-footer"><div class="site-footer__inner"><div class="site-footer__brand"><a class="brand" href="index.html"><img class="brand__icon" src="../assets/brand/scriptpace-app-icon.png" alt="" width="34" height="34"><span>稿随 <span class="brand__english">ScriptPace</span></span></a><p>直视镜头自然表达，不必追着提词器走。</p></div><div><p class="site-footer__heading">探索</p><div class="site-footer__links"><a href="features.html">功能</a><a href="index.html#plans">价格</a><a href="support.html">支持</a><a data-app-store-link href="https://apps.apple.com/app/id6805241939">App Store</a></div></div><div><p class="site-footer__heading">信息</p><div class="site-footer__links"><a href="privacy.html">隐私政策</a><a href="terms.html">使用条款</a><a data-language-switch="en" href="../en/features.html">English</a><a data-support-email href="support.html#contact">支持邮箱</a></div></div></div><div class="site-footer__inner site-footer__bottom"><span>© <span data-current-year>2026</span> ScriptPace</span><span>macOS · iOS · watchOS</span></div></footer>
     <script src="../site-config.js"></script><script src="../assets/js/site.js"></script>
   </body>
 </html>

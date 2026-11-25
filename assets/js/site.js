@@ -23,6 +23,16 @@
     if (!toggle || !menu) {
       return;
     }
+    function closeMenu(restoreFocus) {
+      if (toggle.getAttribute("aria-expanded") !== "true") {
+        return;
+      }
+      toggle.setAttribute("aria-expanded", "false");
+      menu.hidden = true;
+      if (restoreFocus) {
+        toggle.focus();
+      }
+    }
     toggle.addEventListener("click", function () {
       var expanded = toggle.getAttribute("aria-expanded") === "true";
       toggle.setAttribute("aria-expanded", String(!expanded));
@@ -30,22 +40,37 @@
     });
     menu.addEventListener("click", function (event) {
       if (event.target.closest("a")) {
-        toggle.setAttribute("aria-expanded", "false");
-        menu.hidden = true;
+        closeMenu(false);
+      }
+    });
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") {
+        closeMenu(true);
+      }
+    });
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 767) {
+        closeMenu(false);
       }
     });
   }
 
   function initLanguageSwitch() {
     var currentPath = window.location.pathname;
-    document.querySelectorAll("[data-language-switch]").forEach(function (link) {
-      var target = link.getAttribute("data-language-switch");
-      if (!target) {
-        return;
-      }
-      var nextPath = currentPath.replace(/\/(zh-hans|en)(?=\/|$)/, "/" + target);
-      link.setAttribute("href", nextPath || "/" + target + "/");
-    });
+    var links = document.querySelectorAll("[data-language-switch]");
+    function syncLanguageLinks() {
+      var currentHash = window.location.hash || "";
+      links.forEach(function (link) {
+        var target = link.getAttribute("data-language-switch");
+        if (!target) {
+          return;
+        }
+        var nextPath = currentPath.replace(/\/(zh-hans|en)(?=\/|$)/, "/" + target);
+        link.setAttribute("href", (nextPath || "/" + target + "/") + currentHash);
+      });
+    }
+    syncLanguageLinks();
+    window.addEventListener("hashchange", syncLanguageLinks);
   }
 
   function initYearLabel() {
