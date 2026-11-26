@@ -48,6 +48,21 @@ body {
 h1, h2, h3 { text-wrap: balance; }
 p { text-wrap: pretty; }
 
+code {
+  padding: 2px 6px;
+  border-radius: 6px;
+  background: rgba(23, 23, 23, 0.06);
+  border: 1px solid rgba(23, 23, 23, 0.08);
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Monaco, Consolas, monospace;
+  font-size: 0.88em;
+}
+
+.section--dark code {
+  background: rgba(255, 255, 255, 0.09);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: var(--ink-on-dark);
+}
+
 body[data-locale="en"] { font-family: var(--font); }
 
 a { color: inherit; }
@@ -253,6 +268,7 @@ body[data-locale="zh-Hans"] .hero h1 {
 }
 
 .hero__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+.hero__trial-note { margin: 14px 0 0; color: var(--muted-on-dark); font-size: 13px; line-height: 1.5; }
 
 .button {
   display: inline-flex;
@@ -629,19 +645,62 @@ body[data-locale="zh-Hans"] .hero h1 {
   letter-spacing: 0.04em;
 }
 .price-card h3 { margin: 0; font-size: 21px; }
-.price-card__price { margin: 28px 0 10px; font-size: 42px; font-weight: 650; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
+.price-card__price { margin: 24px 0 10px; font-size: 42px; font-weight: 650; letter-spacing: -0.04em; font-variant-numeric: tabular-nums; }
 .price-card__price small { color: var(--muted); font-size: 14px; font-weight: 500; letter-spacing: 0; }
 .pricing-note { max-width: 820px; margin: 24px 0 0; color: var(--muted); font-size: 15px; line-height: 1.6; }
 .price-card p { margin: 0; color: var(--muted); font-size: 14px; }
-.price-card__list { display: grid; gap: 8px; margin: 4px 0 0; padding: 14px 0 0; border-top: 1px solid var(--line); list-style: none; color: var(--ink); font-size: 14px; line-height: 1.45; }
+.price-card .price-card__trial {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin: 0 0 14px;
+  padding: 5px 11px;
+  border-radius: 999px;
+  background: #fdf3ee;
+  border: 1px solid rgba(164, 75, 43, 0.26);
+  color: var(--accent-dark);
+  font-size: 12px;
+  font-weight: 700;
+}
+.price-card .price-card__trial--ultra {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+}
+.price-card .price-card__trial--neutral {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--muted);
+}
+.price-card__list { display: grid; gap: 8px; margin: 0; padding: 14px 0 0; border-top: 1px solid var(--line); list-style: none; color: var(--ink); font-size: 14px; line-height: 1.45; }
 .price-card__list li { display: flex; align-items: baseline; gap: 8px; }
 .price-card__list li::before { content: "✓"; flex: 0 0 auto; color: var(--accent); font-weight: 700; }
 .price-card__list li.is-excluded { color: var(--soft-muted); }
 .price-card__list li.is-excluded::before { content: "—"; color: var(--soft-muted); font-weight: 600; }
-.price-card__footer { margin-top: auto; padding-top: 20px; }
-.price-card__cta { display: inline-flex; align-items: center; gap: 4px; color: var(--accent); font-size: 14px; font-weight: 700; text-decoration: none; }
-.price-card__cta:hover { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 3px; }
-.price-card__meta-note { display: inline-flex; align-items: center; padding: 4px 10px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 12px; font-weight: 600; }
+.price-card__footer { margin-top: auto; padding-top: 22px; }
+.price-card__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(164, 75, 43, 0.34);
+  background: #fdf5f1;
+  color: var(--accent-dark);
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 200ms var(--ease-out-expo), background 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 200ms var(--ease-out-expo);
+}
+.price-card__btn:hover {
+  transform: translateY(-1px);
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--white);
+  box-shadow: 0 10px 22px -8px rgba(164, 75, 43, 0.5);
+}
+.price-card__meta-note { display: inline-flex; align-items: center; min-height: 36px; padding: 4px 12px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 12px; font-weight: 600; }
 
 .cta-band { text-align: center; }
 .cta-band h2 { margin: 0; font-size: clamp(34px, 5vw, 58px); font-weight: 650; letter-spacing: -0.055em; line-height: 1.05; }

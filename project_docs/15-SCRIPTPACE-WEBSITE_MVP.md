@@ -4,23 +4,23 @@
 - Product: 稿随 / ScriptPace
 - Repository: `https://github.com/hddevteam/ScriptPaceWebsite`（公开 Pages 发布仓库：`https://github.com/scriptpace/scriptpace.github.io`，默认生产源：`https://scriptpace.github.io`）
 - Hosting: GitHub Pages
-- Status: OPC video-recording workflow, live improvisation & layered post-production positioning implemented and validated locally (`2026-11-25`); public App Store record & `main` Pages deployment pending
-- Source content: `/Users/ming/projects/scriptpace/project_docs/12-APP-STORE-LISTING-COPY.md`、`/Users/ming/projects/scriptpace/project_docs/14-SCRIPTPACE-SCREENSHOT-STORYBOARD.md`、`/Users/ming/projects/scriptpace/project_docs/23-DEV-016-MACOS_SCREEN_RECORDING_MVP.md`
+- Status: Deployed live to `https://scriptpace.github.io` (`main`, `2026-11-26`); inclusive video-recording workflow, content-aware Voice Follow, studio visual craft, timecode / local MCP integration, human editorial copy, and trial-forward pricing validated (`SEO 100.0/100`, `Lighthouse 100`)
+- Source content: `/Users/ming/projects/scriptpace/project_docs/11-DEV-010-SCRIPTPACE_COMMERCIAL_LAUNCH_MVP.md`、`/Users/ming/projects/scriptpace/project_docs/12-APP-STORE-LISTING-COPY.md`、`/Users/ming/projects/scriptpace/project_docs/14-SCRIPTPACE-SCREENSHOT-STORYBOARD.md`、`/Users/ming/projects/scriptpace/project_docs/23-DEV-016-MACOS_SCREEN_RECORDING_MVP.md`
 
 ## 1. Outcome
 
-让**视频创作者、课程讲师、产品演示者、OPC（One-Person Company，一人公司）与内容团队**在第一次打开稿随官网时，在一个简洁、可信、符合 Apple 审美的静态网站中完成四件事：
+让**视频创作者、课程讲师、产品演示者、OPC（One-Person Company，一人公司）与内容团队**在第一次打开稿随官网时，在一个简洁、可信、有演播室质感且平实易读的静态网站中完成四件事：
 
-1. 一眼看懂稿随是**兼顾单人高效成片与团队专业协作的视频录制工作流解决方案**——围绕同一份脚本打通**从拍前排练到镜头前现场发挥（基于内容跟进、口令重录、跳跃段落）**，并通过内置模板与预置让**一台日常主力 Mac 同时充当工作用机、提词器、录制机与后期处理设备**，既支持个人快速直出，也为后期剪辑团队留出更大的处理空间；
-2. 分清**当下即可投入视频拍摄的能力**（搭配相机/OBS/录屏工具的浮动提词、Voice Follow、临场发挥后的 iPhone/Apple Watch 镜头外无声控场与只读转录复盘）与**计划推出的内置 Mac 屏幕/人像/无损音频同录、非破坏性重调、多层素材包导出及按讲稿归档管理能力**（`DEV-016`）；
+1. 一眼看懂稿随如何围绕同一份讲稿串联**拍前顺稿排练、贴镜头语音跟随实拍（按内容跟进、口令重录、跨段跳跃）与镜头外遥控**，并了解计划推出的内置录屏如何让日常工作的 Mac 直接锁定窗口开拍、导出分层素材包与逐词时间码，或通过**本地 MCP** 衔接 **Codex / GitHub Copilot / Claude** 辅助初剪与标注；
+2. 清晰看到**免费试用低门槛入口**（现已上架的 Pro 提供 **7 天免费试用**，即将推出的年度 Ultra 提供 **1 个月免费试用**），同时准确区分当前可用能力与即将发布的 Ultra 录屏归档能力（`DEV-016`）；
 3. 通过搜索“Mac 提词器 / 视频录制提词 / 录课提词 / Mac teleprompter for video recording”等真实场景词准确找到对应语言的页面，并在社交分享时获得清晰的预览卡片；
 4. 在遇到使用问题或需要查看隐私与条款信息时找到可靠入口。
 
-网站是独立的静态项目，不引入账号、数据库、支付页面、云端脚本管理或后台内容系统。App Store 下载和购买仍由 App Store 完成。
+网站是独立的静态项目，不引入账号、数据库、支付页面、云端脚本管理或后台内容系统。App Store 下载、免费试用开通与订阅管理仍由 App Store 完成。
 
 ## 2. User story
 
-作为一名 **OPC（一人公司）创作者、独立开发者或讲师**，你要独自在一台日常主力 Mac 上完成真实项目开发或课件准备、出镜口播、软件演示与后期剪辑，既没有专职提词员帮忙盯进度，也不想为了录屏专门腾出或购置一台干净的“专用录制电脑”。你既不想眼神离开镜头去追固定滚屏，也不想在现场即兴多讲一个真实案例后伸手摸鼠标找段落；而在录屏演示时，更不想每次手工收拾桌面和重设采集参数，或因为音画被一次性压死在单一成片里而缺乏后期调整余地。你进入稿随官网：先看到如何**围绕一份脚本完成拍前排练到镜头前现场发挥**；同时也清楚看到计划接入同一工作流的 **Mac 内置模板与预置如何免去专用录制机器，让你的主力电脑同时兼任工作用机、提词器、录制机与高自由度分层后期设备**，最后前往 App Store 下载或查看支持说明。
+作为一名**口播创作者、讲师、独立开发者、OPC 主理人或团队演示者**，你要在一台日常工作的 Mac 上完成课件或产品演示准备、出镜讲解与后期交付。你希望带着准备好的讲稿自然看镜头说话，临时想到好案例时可以自由展开聊，提词器能按内容跟上、支持口令重录与镜头外调段；录软件演示时，也希望直接在正在工作的 Mac 上选好窗口预置开拍，拍完既有独立音画轨道进剪辑软件，又有同步 `.srt`、逐词时间码 JSON 与本地 MCP 让 AI 助手帮忙筛选口误和打章节标记。你打开稿随官网，几秒内读懂这套平实清晰的工作流，看到 **Pro 现享 7 天免费试用**，直接点击前往 App Store 下载体验。
 
 ## 3. Information architecture
 
@@ -59,27 +59,27 @@
 
 ### 3.1 Home
 
-首页面向**广泛的视频录制人群（口播创作者、讲师、产品/研发演示者、OPC 一人公司以及有专业剪辑分工的内容团队）**，既突出“即使一个人、一台日常电脑也能跑通全流程”的硬实力，又不把受众局限在 OPC 单一群体。按**包容性首屏主张 → 亮点 01：围绕脚本从排练到现场发挥 → 三端自然配合（单人控场与场外协作皆宜） → 三大高频录制场景 → 亮点 02（计划推出）：一机四用与高自由度分层后期**组织叙事：
+首页面向**广泛的视频录制人群（口播创作者、讲师、产品/研发演示者、OPC 一人公司以及有专业剪辑分工的内容团队）**，以深浅交替的节奏（深色演播室首屏 → 浅色提词与多端实拍 → 深色演播室录屏与 MCP 高潮区 → 突出免费试用的价格区）组织叙事：
 
-- **Hero（直击全场景视频录制：从脚本排练到现场发挥，一机四用兼顾直出与团队后期）**：
-  - 眉标点出 **`视频录制工作解决方案 · 适配创作者、讲师、OPC 与内容团队`** / **`Video-recording workflow · For creators, educators, OPCs & teams`**，避免“专为 OPC”式的排他表述；首屏不引入 Pro/Ultra 订阅等级名称，购买层级统一放在价值说明之后。
-  - 主标题聚焦“直视镜头自然发挥，讲稿跟上你的节奏”，副文案讲清没有摄制团队时如何一人控场：围绕同一份脚本完成拍前排练与贴镜头语音跟随实拍，临场发挥时用 iPhone 与 Apple Watch 在镜头外无声调整段落；计划接入的内置 Mac 屏幕、人像与无损音频录制支持分层素材导出，为后期留出更大处理空间。
-  - 首屏主视觉使用**双语成对的真实 Mac 桌面录制场景截图**（主体面板采用日间浅色主题 `.aqua` 以突出界面层次，底层背景为深色讲稿/课程演示内容，上方贴近镜头位置悬浮未裁切的稿随提词器，旁侧停靠录制控制扩展与摄像头画中画预览），严禁使用卡通/AI 概念插画替代，也避免消极的“尚未发布”措辞。
-- **Core teleprompter highlight（`#teleprompter` 核心亮点 01 · 围绕脚本，从排练到现场发挥）**：把“有稿不死板、即兴不丢行”立为第一亮点：
-  - 先用故事对比讲透 OPC 独立拍摄痛点：**“好脚本是底气，不是枷锁。从拍前顺稿到镜头前临场发挥，节奏始终在你手里。”**——解释一个人既当主讲又当场记时，匀速滚屏为何会在停顿思考或临场发挥时打乱眼神，而稿随如何围绕同一份脚本打通拍前顺稿与现场即兴表达。
-  - 紧接四步卡片闭环：**`01 听顺语感 · 02 离线排练 · 03 跟着声音走 · 04 现场发挥与复盘`**——其中 **`04 现场发挥与复盘` 直接承接 `03 跟着声音走` 的内容识别能力**：支持围绕稿件内容自由发挥，提词器基于内容自动跟进、口令重录与跳跃段落，并在下方直接展示中英文成对的 **`08-mac-transcript-comparison`（只读语音转录并排对照）** 真实界面，直观验证拍后复盘能力且避免首屏与录屏区图片重复。
-- **Current multi-device story（`#pro` 一人成团 · 三端自然配合）**：紧随核心提词亮点，把 Mac + iPhone + Apple Watch 诠释为**单兵创作者的场外提词搭档**，展示同一份讲稿第三段在三端的同步真实截图。
-- **Video recording use cases（`#scenarios` 三大高频视频录制场景）**：覆盖单人创作者、讲师与内容团队最常见的三类实拍工作流，不堆叠重复的状态徽章：
-  1. **镜头口播与个人 IP 拍摄（深度结合 Voice Follow 与现场发挥）**：提词窗贴近摄像头正下方保持自然眼神，**Voice Follow 随自然语速实时推进、停顿思考时自动等待、临场发挥补充案例后用 iPhone Remote 或 Apple Watch 无声接回原稿**，告别机械扫读与伸手摸鼠标的低头废片。
-  2. **在线课程与知识产品讲授（从脚本排练到高完成度实拍）**：面对几十段长课稿，开拍前用系统朗读顺口语、在 iPhone 上离线排练；正式开录一气呵成，单遍结束后并排对照只读语音转录定位卡壳或保留临场金句。
-  3. **软件演示与产品 Walkthrough（免备专用录制机 + 分层导出放大后期空间）**：解决日常主力机录屏“收拾环境繁琐、顺稿框范围重复、成片难重修”的痛点——计划通过单窗口/选定区域等录制模板与预置直接锁定目标工作窗口，无需额外准备专用录制机器，并衔接直出合成或**拆分为多层素材包**的导出流程，给后期剪辑留足调整余地。
-- **Upcoming Mac recording（`#recording` 核心亮点 02 · 即将推出 · 免备专用录制机，一台主力 Mac 释放更大后期空间）**：以 `DEV-016` 真实能力为依据，重点突出两大差异价值——**内置模板与预置让日常主力电脑兼任工作用机、提词器、录制机与后期处理设备（无需准备专用录制机器）**，以及**独立采集与分层导出比传统“一次性压死画面”的录屏留出更大后期空间**；仅在眉标与区块底部保留克制清晰的计划发布说明：
-  - **内置模板与预置 · 免备专用录制机（Templates & Presets — One Mac, Four Roles）**：提供全屏、单窗口、选定区域，以及仅音频、仅摄像头多种模板；支持将采集范围、系统声音、麦克风（可选 **48 kHz/24-bit Apple Lossless**）与摄像头画中画布局保存为录制预置一键切换。无需专门清理整台电脑或额外准备专用录制机，正在干活的工作 Mac 即可随时切入录制与自然提词同步状态，暂停自动剔除停顿片段，录完即存独立本地 Take。
-  - **非破坏性重调、多层素材包导出与按讲稿归档（Post-Production Headroom, Layered Assets & Script Archive）**：展示真实的日间主题 **Export Editor**。重点讲清两大价值：其一是**更大的后期处理空间**——拍完仍可在导出编辑器中非破坏性重调摄像头画中画形状/位置/构图、主体抠像、鼠标指针显隐与点击高亮，并通过内置模板（网页与设备兼容、小文件、**ProRes 422 高画质**、**HEVC 透明通道人像叠加**、无损音频）与自定义导出预置，选择**直接合成单一成片**，或一键导出时间轴对齐的**多层素材包（`Layered Assets`：纯净无遮挡屏幕画面轨 + 透明通道人像轨 + 独立 24-bit/无损音轨 + 同步 `.srt` 字幕与逐词时间 JSON）**直接拖入 Final Cut Pro、Premiere 或 DaVinci Resolve 精剪；其二是**按讲稿自动归档与成片导入管理**——源素材与导入的外部生产成片同夹筛选对照，移除导入项绝不删除外部原文件。
-- **Pricing（`#plans` 提词方案与录制方案清晰呈现）**：面向用户使用自然的产品标题（如“专注镜头提词，或一站式完成屏幕录制与归档”，严禁把“把当前可用权益与即将发布的录制方案清楚分开”等内部 PRD 合规元话术直接印在页面上）。Pro 月度 `$1.99/月`、年度 `$15.99/年`（明确说明**仅限语音跟随提词、语音练习与多端遥控等稿随核心功能，不包含内置屏幕录制**）与 Ultra 年度 `$29.99/年`、永久买断 `$89.99` 同级清晰展示，**将 `推荐` / `Recommended` 主推标记放在 `年度 Ultra` / `Annual Ultra` 上**，并在价格区底部用一行轻量说明提示试用规则与 Ultra 即将发布状态。
+- **Hero（直视镜头自然发挥，突出 7 天免费试用）**：
+  - 眉标点出 **`面向口播视频、课程讲授与软件演示`** / **`For talking-head videos, courses, and product demos`**，不使用中圆点 `·` 罗列词组，首屏不引入 Pro/Ultra 等级代号。
+  - 主标题为“直视镜头自然发挥，讲稿顺着声音推进。” / “Speak naturally on camera. Your script follows along.”，搭配三条无中圆点拼接的短胶囊、主行动按钮 **`免费试用 7 天` / `Start 7-Day Free Trial`**，以及首屏试用微文案（说明 Mac 与 iPhone 版现已上架 App Store，新订阅享 7 天免费试用、随时可取消）。
+  - 首屏主视觉采用带暗色高光舞台外框的**双语成对真实 Mac 桌面录制场景截图**（日间 `.aqua` 提词窗 + 录制面板悬浮于深色演示课件之上）。
+- **Core teleprompter highlight（`#teleprompter` 语音跟随提词与转录复盘）**：
+  - 用平实正向的创作者表达取代“是底气，不是枷锁”式 AI 对仗腔：**“带着准备好的讲稿上镜，想到好例子随时展开聊。”** / **“Step on camera prepared, then speak freely in your own rhythm.”**
+  - 四步卡片串联 `01 听顺语感`、`02 离线排练`、`03 跟着声音走`、`04 现场发挥与复盘`（其中 `04` 直接承接 `03` 的内容匹配、口令重录与跨段跳跃能力），下方紧接中英文成对的 **`08-mac-transcript-comparison`（只读语音转录并排对照）** 真实截图验证拍后复盘能力。
+- **Current multi-device story（`#pro` 多设备默契配合）**：展示同一份讲稿第三段在 Mac、iPhone 与免费配套 Apple Watch 上的同步实拍截图，严格遵循 `Mac > iPhone > Watch` 真实物理尺寸比例，兼顾单人盲操与场外同伴协助。
+- **Video recording use cases（`#scenarios` 常见视频录制场景）**：覆盖三类高频实拍场景（口播视频与个人 IP、在线课程与企业内训、软件演示与 AI 辅助后期），全部采用正向直白表达与两条 `✓` 要点。
+- **Upcoming Mac recording（`#recording` 即将推出：分层录屏、时间码与本地 MCP，深色演播室高潮区块）**：采用 `section--dark section--studio` 深色舞台呈现日间 **Export Editor** 真实截图，主标题直白易懂（**“分层素材自带时间码，剪辑与 AI 直接接手。”** / **“Layered media and timecodes ready for NLEs and AI assistants.”**），展开三大核心价值：
+  - **01 主力电脑直接开拍**：内置全屏、单窗口、选定区域、仅音频与仅摄像头模板及预置（含可选 `48 kHz / 24-bit Apple Lossless` 麦克风），正在工作的日常 Mac 选好窗口预置即可同步提词开录并按讲稿自动建夹归档（支持同夹管理外部导入成片，移除列表项不会删除外部原文件）。
+  - **02 分层素材与同步字幕**：支持非破坏性重调人像画中画、主体抠像与鼠标点击高亮，既可一键合成成片，也可导出时间零点对齐的多层素材包（纯净屏幕、透明人像、独立音轨与同步 `.srt`）进入 Final Cut、Premiere 或 DaVinci。
+  - **03 时间码与本地 MCP**：内置本地 stdio MCP（`--mcp`），经本地目录显式授权后，**Codex、GitHub Copilot、Claude** 等工具可直接读取录制记录、讲稿转录、`.srt` 与逐词时间码 JSON，辅助定位口误重录、生成章节标记与触发预置导出（严守本地隐私边界，不上传媒体，也不后台静默启停录制）。
+- **Pricing（`#plans` 突出免费试用，降低决策门槛）**：标题围绕先试后买展开（“先免费试用拍几条，顺手再决定留哪套方案” / “Try it free on real shoots before you pay”，严禁把内部 PRD 合规元话术印在页面上）。在顶栏（`免费试用` / `Try Free`）、首屏主按钮与微文案（`免费试用 7 天`）、价格卡片醒目试用胶囊（Pro 月度 `$1.99/月`、年度 `$15.99/年` 突出 **7 天免费试用** 与独立试用按钮；**主推 `推荐 / Recommended` 的年度 Ultra `$29.99/年` 突出上线享 1 个月免费试用**；永久买断 `$89.99` 标明买断无续费）及页尾行动区统一强化试用动力，并在底部如实说明随时可取消及 Ultra 即将发布状态。
 - **Privacy promise（本地优先承诺）**：标题使用自然用户表达（“本地优先，讲稿与音视频留在你的设备上”，不写“把……边界说清楚”等内部文档措辞）；无需应用账号，说明 Voice Follow/练习语音不保存为原始麦克风音频，而内置录制（即将发布）将音视频与导入成片保存在本地 Mac、不上传稿随服务器。
-- **扫读友好型文案密度（Scannability Budget）**：首页只保留核心结论、短胶囊标签（`.hero__chips`）与 `✓` 极短要点列表（`.story__points` / `.scenario-card__points` / `.recording-feature__list` / `.price-card__list`），首页总字数控制在 `~2,000` 中文字符以内、单段正文不超过 2 行，避免重复堆叠长段落；详细编解码规格（`48 kHz / 24-bit Apple Lossless`、`ProRes 422`、`HEVC Alpha`、导入移除规则）下沉至 `features.html#recording` 承接。
-- **Footer & Navigation**：顶部主导航、移动菜单与页脚统一提供功能、**价格（`#plans` / `index.html#plans`）**、支持、语言切换（保留当前页内 `#hash` 锚点位置）与 App Store 入口；当前页面导航具备明确的 `[aria-current="page"]` 视觉高亮，所有页内锚点具备防粘性顶栏遮挡的 `scroll-margin-top`；功能页首屏提供三阶段快速跳转胶囊条。
+- **去 AI 腔调与扫读友好型文案规范（Human Editorial & Scannability Budget）**：
+  - **禁用中圆点 `·` 拼接腔与修辞性否定对比句**：页面标题、眉标、胶囊、卡片标签与正文禁止频繁用 `·` 机械罗列词组；消除“是……不是……”“告别……”“不必……”“不用另备……”等 AI 高频否定对仗句式，改用平实、直接、正向的创作者口吻（仅在必要的功能与隐私事实边界处保留客观说明，如“不包含内置 Mac 屏幕录制”“不保存原始音频”）。
+  - **控制阅读负担**：首页只保留核心结论、短胶囊标签（`.hero__chips`）与 `✓` 极短要点列表（`.story__points` / `.scenario-card__points` / `.price-card__list`），单段正文不超过 2 行；详细编解码规格下沉至 `features.html#recording` 承接。
+- **Footer & Navigation**：顶部主导航、移动菜单与页脚统一提供功能、**价格与试用（`#plans` / `index.html#plans`）**、支持、语言切换（保留当前页内 `#hash` 锚点位置）与 **`免费试用` / `Try Free`** App Store 入口；当前页面导航具备明确的 `[aria-current="page"]` 视觉高亮，所有页内锚点具备防粘性顶栏遮挡的 `scroll-margin-top`；功能页首屏提供三阶段快速跳转胶囊条。
 
 #### 3.1.1 与竞品的差异点（内部定位草案）
 
@@ -139,9 +139,9 @@ DEV-016 完成并发布后，用户可以直接在稿随内选择显示器、窗
    - **Voice Follow 基于内容跟进、重录与跨段跳跃**：提词器基于讲稿内容实时识别推进，停顿思考或围绕稿件展开即兴发挥时稳稳守位，接回原稿或跨段跳跃时自动跟进，说出重录口令即可直接回退重拍。
    - **iPhone Remote 扫码盲操**：单兵录制中即兴发挥或段落偶发错位时，在镜头外轻点上一段/下一段静默恢复位置，无需伸手摸鼠标打断画面。
    - **Apple Watch 免费配套控制**：站立讲授或双手演示不便拿手机时，旋动 Digital Crown 或轻点腕上按钮调整段落。
-3. **阶段三 · 计划推出 · 免备专用录制机、留足后期空间的内置 Mac 录屏与归档（计划随 Ultra 上线）**
-   - **内置模板与预置 · 一机四用同步开拍**：支持全屏、单窗口、选定区域，以及仅音频、仅摄像头录制，支持保存采集预置与可选 `48 kHz / 24-bit Apple Lossless` 麦克风采集；无需额外准备专用录制机器，日常主力电脑即可兼任工作用机、贴镜头提词器、多源录制机与后期处理设备，倒计时结束自动启动采集并切入提词推进，支持录中暂停剔除与多条本地 Take 连续录制。
-   - **非破坏性重调、多层素材包导出与按讲稿归档**：拍完可在内置 Export Editor 中非破坏性调整摄像头画中画（圆形/矩形/方形/镜像/四角位置）、主体背景抠像、鼠标指针显隐与点击高亮；配合网页兼容、ProRes 422 高画质、HEVC 透明通道等内置及自定义导出预置，既可直接合成单一影片，也可导出时间轴零点对齐的**分层素材包**（纯净无遮挡屏幕画面轨、透明通道人像轨、独立 24-bit/无损音轨、同步 `.srt` 字幕与逐词时间 JSON），为 Final Cut Pro / Premiere / DaVinci Resolve 释放更大后期处理空间；所有原始素材与外部导入的生产成片（标注 `导入` / `Imported`，移除列表项绝不删除外部原文件）自动归入同名讲稿文件夹管理。文案保持诚实的“计划推出 / 即将推出 / Coming soon”口径。
+3. **阶段三 · 计划推出 · 分层录屏、逐词时间码 JSON 与本地 MCP 工作流（计划随 Ultra 上线）**
+   - **内置模板与采集预置 · 主力电脑直接开拍**：支持全屏、单窗口、选定区域，以及仅音频、仅摄像头录制，支持保存采集预置与可选 `48 kHz / 24-bit Apple Lossless` 麦克风采集；不用专门腾出录屏电脑，正在干活的工作 Mac 锁定窗口即可同步启动采集与提词推进，支持录中暂停剔除与多条本地 Take 连续录制。
+   - **非破坏性重调、分层素材包、逐词时间码 JSON 与本地 MCP**：拍完可在内置 Export Editor 中非破坏性调整摄像头画中画（圆形/矩形/方形/镜像/四角位置）、主体背景抠像、鼠标指针显隐与点击高亮；配合网页兼容、ProRes 422 高画质、HEVC 透明通道等内置及自定义导出预置，既可直接合成单一影片，也可导出时间轴零点对齐的**分层素材包**（纯净无遮挡屏幕画面轨、透明通道人像轨、独立 24-bit/无损音轨、同步 `.srt` 字幕与逐词时间码 JSON），同时提供内置**本地 stdio MCP（`--mcp`）**，让 **Codex、GitHub Copilot、Claude** 等工具在本地显式目录授权下读取录制记录、讲稿转录、`.srt` 与逐词时间码 JSON，辅助定位口误重录、生成章节/粗剪标注或触发预置导出；所有原始素材与外部导入的生产成片（标注 `导入` / `Imported`，移除列表项绝不删除外部原文件）自动归入同名讲稿文件夹管理。文案保持诚实的“计划推出 / 即将推出 / Coming soon”口径。
 
 公开网站不得声称自动改稿、云端写作、云端历史、完美识别、练习模式原始音频归档或单独购买 Apple Watch。发布版本不公开宣传源文件编辑能力。
 
@@ -184,12 +184,11 @@ Support URL 必须能让用户找到真实的联系方式，并与 App Store Con
 
 ## 4. Visual system
 
-- 视觉方向：Apple 风格的克制、留白、清晰层级和**富有临场感的真实视频录制画面**。
-- 背景：暖白和浅灰为主；深色 Hero 用于建立桌面录制与镜头提词的沉浸对比，但不使用廉价渐变堆叠。
-- 强调色：从稿随图标提取的低饱和暖色，仅用于 CTA、发布状态胶囊和重点步骤索引。
-- 字体：优先系统字体栈，中文使用系统中文字体，英文使用系统无衬线字体。
-- 圆角：卡片和按钮使用中等圆角，避免过度“玻璃拟态”。
-- 动效：仅保留淡入、悬停和移动端菜单过渡；`prefers-reduced-motion` 下关闭非必要动画。
+- 视觉方向：Apple 风格的克制、留白、清晰层级、**深浅交替的演播室光影节奏**与**富有临场感的真实视频录制画面**。
+- 背景与光影层次：暖白纸张底（`--paper`）与柔和暖灰过渡层为主；首屏 Hero 与首页 `#recording` 录屏高潮区采用深炭黑演播室舞台（`--studio`）搭配克制的暖铜径向氛围光，形成明暗交替的滚动峰值；产品截图统一置于带顶部 `1px` 内高光（`inset`）与双层柔和偏移阴影的渐变舞台框架中。
+- 强调色：从稿随图标提取的暖铜色（`--accent` / `--accent-on-dark`），用于主 CTA、免费试用胶囊、年度 Ultra 推荐徽章和步骤编号，严格满足 WCAG AA 对比度（`≥ 4.5:1`）。
+- 字体与排版细节：优先系统字体栈（中文系统无衬线 + 英文 SF Pro），标题启用 `text-wrap: balance`，正文启用 `text-wrap: pretty`，价格与步骤编号启用 `font-variant-numeric: tabular-nums`，行内技术标记（`.srt`、`--mcp`）采用深浅自适应胶囊样式。
+- 圆角与动效：卡片和舞台使用中等圆角；粘性顶栏具备滚动阴影过渡（`.is-scrolled`），视口下方关键舞台采用指数缓出（`cubic-bezier(0.16, 1, 0.3, 1)`）轻抬升入场，并在 `prefers-reduced-motion` 下自动关闭非必要动画。
 - **截图与真实性硬性规范**：
   - **严禁使用 AI 概念插画或假 UI 插图**（如卡通人物、虚构时间轴）替代产品画面；严禁在中文页面使用英文纯文字占位卡替代缺失截图。
   - **中英文 1:1 严格对称**：`assets/screenshots/zh-Hans/` 与 `assets/screenshots/en/` 必须拥有一一对应的真实应用截图（包含桌面录制场景预览图、Export Editor 预览图、转录对照图及多端同步图），界面语言与演示讲稿语言严格一致。
@@ -213,8 +212,8 @@ Support URL 必须能让用户找到真实的联系方式，并与 App Store Con
 - **中文核心场景词**：`Mac 提词器`、`语音跟随提词器`、`视频录制提词器`、`口播提词软件`、`录课提词器`、`Mac 录屏提词`、`iPhone 遥控提词器`、`Apple Watch 控制提词器`。
 - **英文核心场景词**：`Mac teleprompter app`、`voice-following teleprompter`、`voice-activated teleprompter for Mac`、`teleprompter for video recording`、`teleprompter for course & screen recording`、`Apple Watch teleprompter remote`。
 - **关键页面元数据基准**：
-  - `zh-hans/index.html` Title：`稿随 ScriptPace — Mac 语音跟随提词器 · 口播、录课与屏幕演示工作流`
-  - `en/index.html` Title：`ScriptPace — Voice-Following Mac Teleprompter for Video & Screen Recording`
+  - `zh-hans/index.html` Title：`稿随 ScriptPace — Mac 语音跟随提词器，支持口播、录课与屏幕演示`
+  - `en/index.html` Title：`ScriptPace — Voice-Following Mac Teleprompter for Video & Course Recording`
   - `zh-hans/features.html` Title：`稿随功能 — Mac 悬浮提词、语音声控跟读、iPhone/Watch 遥控与录屏计划`
   - `en/features.html` Title：`ScriptPace Features — Mac Floating Teleprompter, Voice Follow, Remote & Screen Recording Plan`
   - `zh-hans/support.html` Title：`使用支持与常见问题 — 稿随 ScriptPace Mac 视频提词与遥控指南`
@@ -340,24 +339,29 @@ The implementation is recorded in:
 - `465269c` — website MVP design, numbered project document, and implementation plan;
 - `30317a8` — bilingual static website, responsive visual system, ten locale-matched screenshots, support/legal pages, and GitHub Pages workflow;
 - `ea5fdfd` ~ `266cc45` — device-aligned screenshot story, public support contact configuration, finalized legal preview guards, and `scriptpace` organization remote setup;
-- `2026-11-25` (`feature/website-mvp` refactoring increment):
-  - Refactored `index.html`, `zh-hans/{index,features,support,privacy,terms}.html`, and `en/{index,features,support,privacy,terms}.html` around the three video-recording scenarios (on-camera talking head with external cameras/OBS, online course rehearsal & review, software walkthroughs) and three creation stages, plus the dual `DEV-016` Capture + Export Editor showcase;
-  - Generated 1:1 symmetric `zh-Hans` / `en` macOS UI captures (`06-mac-prompter-recording`, `07-mac-export-editor`, `08-mac-transcript-comparison`), `<picture>` WebP variants (`< 115 KB`), and `1200×630` Open Graph cards (`assets/og/{zh-Hans,en}/social-card.png`), and removed AI concept illustrations;
-  - Added `/robots.txt`, `/sitemap.xml` (11 URLs, 33 `xhtml:link` alternates), self-referencing `canonical`, paired `hreflang` (`zh-Hans`, `en`, `x-default`), Open Graph / Twitter Card tags, `SoftwareApplication` & `FAQPage` JSON-LD, explicit `img[width][height]`, WCAG AA contrast tokens, and upgraded `scripts/check-site.py`, `scripts/check-links.py`, and `scripts/check-responsive-assets.py`.
+- `375b265` ~ `46dac7a` (`2026-11-25`) — refactored all 11 routes around video-recording workflows, generated 1:1 symmetric `zh-Hans` / `en` macOS UI captures (`06-mac-prompter-recording`, `07-mac-export-editor` with script-folder archive & imported clip badge, `08-mac-transcript-comparison`), WebP variants (`< 115 KB`), `1200×630` Open Graph cards, `/robots.txt`, `/sitemap.xml`, `canonical`/`hreflang`, JSON-LD (`SoftwareApplication` + `FAQPage`), and honest planned phrasing for upcoming screen recording;
+- `3f4876d` (`2026-11-25`) — broadened audience beyond OPC to creators, educators, presenters, and teams; linked live improvisation directly to content-aware Voice Follow, rerecord commands, and paragraph jumps; added Pricing navigation, anchor scroll margins, stage jump pills, scannable `✓` checklists, and true-to-life `Mac > iPhone > Apple Watch` physical screenshot proportions;
+- `39ee342` (`2026-11-26`) — elevated visual craft (`impeccable` Scheme A) with studio radial lighting, dark `#recording` studio climax, pedestal borders/shadows, `tabular-nums`, scroll-aware header, and reduced-motion-safe stage reveals; deployed live to `https://scriptpace.github.io`;
+- `2026-11-26` (timecode / local MCP, human editorial voice & trial-forward increment):
+  - Replaced obscure compressed jargon with plain creator phrasing and added verified `.srt`, word-timing JSON, and local stdio MCP (`--mcp`) workflow details for **Codex, GitHub Copilot, and Claude** rough-cut/marker assistance;
+  - Removed all 75+ middle-dot (`·`) phrase chains and rhetorical negative-contrast AI tropes across all 11 HTML routes;
+  - Spotlighted the **7-day free trial** on Pro and **1-month free trial** on Annual Ultra across navigation (`价格与试用` / `免费试用`), Hero CTAs + trial note, pricing trial badges/buttons, and bottom CTA bands.
 
 ### Check
 
-Local validation & quantitative Before/After SEO benchmark evidence (`2026-11-25`):
+Local & production deployment validation evidence (`2026-11-25` ~ `2026-11-26`):
 
-- `node --check site-config.js` passed;
+- `node --check site-config.js` and `node --check assets/js/site.js` passed;
 - `python3 scripts/check-site.py --production` passed;
 - `python3 scripts/check-links.py` passed;
 - `python3 scripts/check-responsive-assets.py` passed (all symmetric `zh-Hans` / `en` PNG + WebP screenshots and `1200×630` OG cards verified);
+- `impeccable` mechanical design & anti-slop detector (`detect.mjs --json`) passed with **`0` warnings** across all pages and CSS (`0` middle-dot `·` chains in HTML);
 - `git diff --check` passed;
-- Headless Chrome verification across all 13 routes (`/`, `/robots.txt`, `/sitemap.xml`, `/zh-hans/*`, `/en/*`) returned HTTP `200`, confirmed `zh-CN` → `/zh-hans/` and `en-US` → `/en/` root routing, verified zero horizontal overflow at `375px` / `900px` / `1440px`, and measured `maxCLS = 0`;
+- Headless Chrome verification across all 13 routes (`/`, `/robots.txt`, `/sitemap.xml`, `/zh-hans/*`, `/en/*`) returned HTTP `200`, confirmed `zh-CN` → `/zh-hans/` and `en-US` → `/en/` root routing, verified `Mac > iPhone > Watch` physical proportions and zero horizontal overflow across mobile and desktop viewports, and measured `CLS = 0`;
 - Lighthouse audits (`chrome-devtools`):
-  - `/zh-hans/` (Desktop): Accessibility `95` (36 failed nodes) → **`100` (0 failed)**; Best Practices **`100`**; SEO **`100`**; Agentic Browsing **`100`**;
-  - `/en/features.html` (Mobile): Accessibility `95` (20 failed nodes) → **`100` (0 failed)**; Best Practices **`100`**; SEO **`100`**; Agentic Browsing **`100`**.
+  - `/zh-hans/` (Desktop): Accessibility `95` → **`100` (50/50 passed, 0 failed)**; Best Practices **`100`**; SEO **`100`**; Agentic Browsing **`100`**;
+  - `/en/features.html` (Mobile): Accessibility `95` → **`100` (0 failed)**; Best Practices **`100`**; SEO **`100`**; Agentic Browsing **`100`**;
+- GitHub Pages live deployment verified at `https://scriptpace.github.io` (`pages-build-deployment` succeeded, live routes returning HTTP `200`).
 
 | 量化评估维度 | 改版前 (Before) | 改版后 (After) | 变化幅度 |
 | --- | --- | --- | --- |
@@ -369,7 +373,7 @@ Local validation & quantitative Before/After SEO benchmark evidence (`2026-11-25
 | 根路径 `/` 非重定向爬虫可读字符 / 内链数 | `117 字符 / 3 链接` | **`384 字符 / 9 链接`** | **+228% 文本 / 3× 内链** |
 | Lighthouse Accessibility（桌面 `/zh-hans/` & 移动 `/en/features.html`） | `95 / 100`（36 处对比度与命名违规） | **`100 / 100`（0 违规）** | **+5 分（清零违规）** |
 
-Remaining external release gates before public promotion: App Store record public visibility (current `appStoreURL` returns HTTP `404` pre-release) and explicitly authorized push/merge to the `main` GitHub Pages deployment branch.
+Remaining external release gate: App Store record public visibility once the listing is approved and released (`DEV-016` Ultra `Offer` entries stay excluded from `SoftwareApplication` JSON-LD until Ultra is live on the App Store).
 
 ### Act
 
@@ -377,4 +381,4 @@ Retain `python3 scripts/check-site.py --production`, `check-links.py`, and `chec
 
 ## 11. Retrospective
 
-The first implementation rightly excluded accounts, a CMS, support tickets, analytics, cookies, payment collection, and premature custom-domain DNS. The `2026-11-25` design review showed that strict release compliance ("built-in screen recording is not shipped yet") must not obscure the product's primary identity as a **video-recording workflow tool**: creators film today with cameras and external recorders, and need concrete visual proof—plus proper bilingual SEO, `hreflang`, social cards, and structured data—to discover ScriptPace and understand both today's on-camera prompting flow and the upcoming built-in Mac recording studio.
+The first implementation rightly excluded accounts, a CMS, support tickets, analytics, cookies, payment collection, and premature custom-domain DNS. Subsequent `2026-11-25` ~ `2026-11-26` iterations proved four key product-website lessons: (1) strict release compliance for upcoming recording must still let the site lead with concrete video-recording workflows and real macOS/iOS/watchOS UI captures in true `Mac > iPhone > Watch` proportions; (2) highlighting `.srt`, word-timing JSON, and local `--mcp` integration makes post-production value concrete for both NLE editors and AI-assisted workflows (`Codex` / `GitHub Copilot` / `Claude`); (3) removing AI-cadence middle-dot chains and negative-contrast tropes makes product copy immediately more trustworthy; and (4) surfacing the 7-day Pro and 1-month Annual Ultra free trials directly in navigation, Hero, and plan cards gives visitors a clear, low-friction reason to try ScriptPace on their next shoot.
